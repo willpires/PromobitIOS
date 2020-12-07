@@ -1,0 +1,813 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D5DD370B438575F19F8937F /* Pods_promobitIOS_promobitIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED4D4F3718E0C410062AFAD /* Pods_promobitIOS_promobitIOSUITests.framework */; };
+		7CF7C8DAD5E1E44B70767EE8 /* Pods_promobitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 050A0D69DAB801F46D36F759 /* Pods_promobitIOS.framework */; };
+		7DF73E08401731294B79114C /* Pods_promobitIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE04371DF92BB3B9FD078B0 /* Pods_promobitIOSTests.framework */; };
+		AC592128257D723F00AB1338 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC592127257D723F00AB1338 /* AppDelegate.swift */; };
+		AC59212A257D723F00AB1338 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC592129257D723F00AB1338 /* SceneDelegate.swift */; };
+		AC59212C257D723F00AB1338 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC59212B257D723F00AB1338 /* HomeController.swift */; };
+		AC59212F257D723F00AB1338 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC59212D257D723F00AB1338 /* Main.storyboard */; };
+		AC592131257D724300AB1338 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC592130257D724300AB1338 /* Assets.xcassets */; };
+		AC592134257D724300AB1338 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC592132257D724300AB1338 /* LaunchScreen.storyboard */; };
+		AC59213F257D724300AB1338 /* promobitIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC59213E257D724300AB1338 /* promobitIOSTests.swift */; };
+		AC59214A257D724300AB1338 /* promobitIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC592149257D724300AB1338 /* promobitIOSUITests.swift */; };
+		AC592158257D9E7200AB1338 /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC592157257D9E7200AB1338 /* CadastroViewController.swift */; };
+		AC59215B257D9EAB00AB1338 /* CadastroPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC59215A257D9EAB00AB1338 /* CadastroPresenter.swift */; };
+		AC59215D257D9EB800AB1338 /* CadastroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC59215C257D9EB800AB1338 /* CadastroModel.swift */; };
+		ACF8601B257EA54100A5BC5D /* Contato.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8601A257EA54100A5BC5D /* Contato.swift */; };
+		ACF8601E257EA58C00A5BC5D /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8601D257EA58C00A5BC5D /* HomePresenter.swift */; };
+		ACF86020257EA5A000A5BC5D /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8601F257EA5A000A5BC5D /* HomeModel.swift */; };
+		ACF86024257EB0D600A5BC5D /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF86023257EB0D600A5BC5D /* HomeTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC59213B257D724300AB1338 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC59211C257D723F00AB1338 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC592123257D723F00AB1338;
+			remoteInfo = promobitIOS;
+		};
+		AC592146257D724300AB1338 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC59211C257D723F00AB1338 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC592123257D723F00AB1338;
+			remoteInfo = promobitIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		050A0D69DAB801F46D36F759 /* Pods_promobitIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_promobitIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10F838EBD3A38FC5305AA19B /* Pods-promobitIOS-promobitIOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-promobitIOS-promobitIOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-promobitIOS-promobitIOSUITests/Pods-promobitIOS-promobitIOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1AE04371DF92BB3B9FD078B0 /* Pods_promobitIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_promobitIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D5BB0C26866E701DFF3C25C /* Pods-promobitIOS-promobitIOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-promobitIOS-promobitIOSUITests.release.xcconfig"; path = "Target Support Files/Pods-promobitIOS-promobitIOSUITests/Pods-promobitIOS-promobitIOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		840CC87550047B8A0D85E523 /* Pods-promobitIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-promobitIOSTests.release.xcconfig"; path = "Target Support Files/Pods-promobitIOSTests/Pods-promobitIOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		AC592124257D723F00AB1338 /* promobitIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = promobitIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC592127257D723F00AB1338 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC592129257D723F00AB1338 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AC59212B257D723F00AB1338 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		AC59212E257D723F00AB1338 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC592130257D724300AB1338 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC592133257D724300AB1338 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC592135257D724300AB1338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC59213A257D724300AB1338 /* promobitIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = promobitIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC59213E257D724300AB1338 /* promobitIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = promobitIOSTests.swift; sourceTree = "<group>"; };
+		AC592140257D724300AB1338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC592145257D724300AB1338 /* promobitIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = promobitIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC592149257D724300AB1338 /* promobitIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = promobitIOSUITests.swift; sourceTree = "<group>"; };
+		AC59214B257D724300AB1338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC592157257D9E7200AB1338 /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
+		AC59215A257D9EAB00AB1338 /* CadastroPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroPresenter.swift; sourceTree = "<group>"; };
+		AC59215C257D9EB800AB1338 /* CadastroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroModel.swift; sourceTree = "<group>"; };
+		ACF8601A257EA54100A5BC5D /* Contato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contato.swift; sourceTree = "<group>"; };
+		ACF8601D257EA58C00A5BC5D /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		ACF8601F257EA5A000A5BC5D /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		ACF86023257EB0D600A5BC5D /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		AD4E1A6A07028459122BC99B /* Pods-promobitIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-promobitIOSTests.debug.xcconfig"; path = "Target Support Files/Pods-promobitIOSTests/Pods-promobitIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CED4D4F3718E0C410062AFAD /* Pods_promobitIOS_promobitIOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_promobitIOS_promobitIOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEF22D2DC3AF4A9B6D88EAAF /* Pods-promobitIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-promobitIOS.debug.xcconfig"; path = "Target Support Files/Pods-promobitIOS/Pods-promobitIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		FC9983366AD09544A197224A /* Pods-promobitIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-promobitIOS.release.xcconfig"; path = "Target Support Files/Pods-promobitIOS/Pods-promobitIOS.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC592121257D723F00AB1338 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CF7C8DAD5E1E44B70767EE8 /* Pods_promobitIOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC592137257D724300AB1338 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DF73E08401731294B79114C /* Pods_promobitIOSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC592142257D724300AB1338 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D5DD370B438575F19F8937F /* Pods_promobitIOS_promobitIOSUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7481B6CD371234DD03FB7FAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				050A0D69DAB801F46D36F759 /* Pods_promobitIOS.framework */,
+				CED4D4F3718E0C410062AFAD /* Pods_promobitIOS_promobitIOSUITests.framework */,
+				1AE04371DF92BB3B9FD078B0 /* Pods_promobitIOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76E71E2ACDAD16C4BC71CB45 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DEF22D2DC3AF4A9B6D88EAAF /* Pods-promobitIOS.debug.xcconfig */,
+				FC9983366AD09544A197224A /* Pods-promobitIOS.release.xcconfig */,
+				10F838EBD3A38FC5305AA19B /* Pods-promobitIOS-promobitIOSUITests.debug.xcconfig */,
+				2D5BB0C26866E701DFF3C25C /* Pods-promobitIOS-promobitIOSUITests.release.xcconfig */,
+				AD4E1A6A07028459122BC99B /* Pods-promobitIOSTests.debug.xcconfig */,
+				840CC87550047B8A0D85E523 /* Pods-promobitIOSTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AC59211B257D723F00AB1338 = {
+			isa = PBXGroup;
+			children = (
+				AC592126257D723F00AB1338 /* promobitIOS */,
+				AC59213D257D724300AB1338 /* promobitIOSTests */,
+				AC592148257D724300AB1338 /* promobitIOSUITests */,
+				AC592125257D723F00AB1338 /* Products */,
+				76E71E2ACDAD16C4BC71CB45 /* Pods */,
+				7481B6CD371234DD03FB7FAD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AC592125257D723F00AB1338 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC592124257D723F00AB1338 /* promobitIOS.app */,
+				AC59213A257D724300AB1338 /* promobitIOSTests.xctest */,
+				AC592145257D724300AB1338 /* promobitIOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC592126257D723F00AB1338 /* promobitIOS */ = {
+			isa = PBXGroup;
+			children = (
+				ACF86021257EA64E00A5BC5D /* Service */,
+				ACF8601C257EA57600A5BC5D /* Home */,
+				ACF86019257EA51A00A5BC5D /* Entites */,
+				AC592127257D723F00AB1338 /* AppDelegate.swift */,
+				AC592129257D723F00AB1338 /* SceneDelegate.swift */,
+				AC59212D257D723F00AB1338 /* Main.storyboard */,
+				AC592130257D724300AB1338 /* Assets.xcassets */,
+				AC592132257D724300AB1338 /* LaunchScreen.storyboard */,
+				AC592135257D724300AB1338 /* Info.plist */,
+				AC592159257D9E8000AB1338 /* Cadastro */,
+			);
+			path = promobitIOS;
+			sourceTree = "<group>";
+		};
+		AC59213D257D724300AB1338 /* promobitIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC59213E257D724300AB1338 /* promobitIOSTests.swift */,
+				AC592140257D724300AB1338 /* Info.plist */,
+			);
+			path = promobitIOSTests;
+			sourceTree = "<group>";
+		};
+		AC592148257D724300AB1338 /* promobitIOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AC592149257D724300AB1338 /* promobitIOSUITests.swift */,
+				AC59214B257D724300AB1338 /* Info.plist */,
+			);
+			path = promobitIOSUITests;
+			sourceTree = "<group>";
+		};
+		AC592159257D9E8000AB1338 /* Cadastro */ = {
+			isa = PBXGroup;
+			children = (
+				AC592157257D9E7200AB1338 /* CadastroViewController.swift */,
+				AC59215A257D9EAB00AB1338 /* CadastroPresenter.swift */,
+				AC59215C257D9EB800AB1338 /* CadastroModel.swift */,
+			);
+			path = Cadastro;
+			sourceTree = "<group>";
+		};
+		ACF86019257EA51A00A5BC5D /* Entites */ = {
+			isa = PBXGroup;
+			children = (
+				ACF8601A257EA54100A5BC5D /* Contato.swift */,
+			);
+			path = Entites;
+			sourceTree = "<group>";
+		};
+		ACF8601C257EA57600A5BC5D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				ACF86022257EB0B500A5BC5D /* Cell */,
+				AC59212B257D723F00AB1338 /* HomeController.swift */,
+				ACF8601D257EA58C00A5BC5D /* HomePresenter.swift */,
+				ACF8601F257EA5A000A5BC5D /* HomeModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		ACF86021257EA64E00A5BC5D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		ACF86022257EB0B500A5BC5D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				ACF86023257EB0D600A5BC5D /* HomeTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC592123257D723F00AB1338 /* promobitIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC59214E257D724300AB1338 /* Build configuration list for PBXNativeTarget "promobitIOS" */;
+			buildPhases = (
+				8E1AA8C0164FA6454B8C338D /* [CP] Check Pods Manifest.lock */,
+				AC592120257D723F00AB1338 /* Sources */,
+				AC592121257D723F00AB1338 /* Frameworks */,
+				AC592122257D723F00AB1338 /* Resources */,
+				2761168BEE8416A3B6EFAB9C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = promobitIOS;
+			productName = promobitIOS;
+			productReference = AC592124257D723F00AB1338 /* promobitIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC592139257D724300AB1338 /* promobitIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC592151257D724300AB1338 /* Build configuration list for PBXNativeTarget "promobitIOSTests" */;
+			buildPhases = (
+				9A656605A68644902ABBC633 /* [CP] Check Pods Manifest.lock */,
+				AC592136257D724300AB1338 /* Sources */,
+				AC592137257D724300AB1338 /* Frameworks */,
+				AC592138257D724300AB1338 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC59213C257D724300AB1338 /* PBXTargetDependency */,
+			);
+			name = promobitIOSTests;
+			productName = promobitIOSTests;
+			productReference = AC59213A257D724300AB1338 /* promobitIOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AC592144257D724300AB1338 /* promobitIOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC592154257D724300AB1338 /* Build configuration list for PBXNativeTarget "promobitIOSUITests" */;
+			buildPhases = (
+				FB1302E25A9080A350B09EBA /* [CP] Check Pods Manifest.lock */,
+				AC592141257D724300AB1338 /* Sources */,
+				AC592142257D724300AB1338 /* Frameworks */,
+				AC592143257D724300AB1338 /* Resources */,
+				9838D10C28775980C0CDEAD9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC592147257D724300AB1338 /* PBXTargetDependency */,
+			);
+			name = promobitIOSUITests;
+			productName = promobitIOSUITests;
+			productReference = AC592145257D724300AB1338 /* promobitIOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC59211C257D723F00AB1338 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "william pires";
+				TargetAttributes = {
+					AC592123257D723F00AB1338 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					AC592139257D724300AB1338 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = AC592123257D723F00AB1338;
+					};
+					AC592144257D724300AB1338 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = AC592123257D723F00AB1338;
+					};
+				};
+			};
+			buildConfigurationList = AC59211F257D723F00AB1338 /* Build configuration list for PBXProject "promobitIOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC59211B257D723F00AB1338;
+			productRefGroup = AC592125257D723F00AB1338 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC592123257D723F00AB1338 /* promobitIOS */,
+				AC592139257D724300AB1338 /* promobitIOSTests */,
+				AC592144257D724300AB1338 /* promobitIOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC592122257D723F00AB1338 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC592134257D724300AB1338 /* LaunchScreen.storyboard in Resources */,
+				AC592131257D724300AB1338 /* Assets.xcassets in Resources */,
+				AC59212F257D723F00AB1338 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC592138257D724300AB1338 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC592143257D724300AB1338 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2761168BEE8416A3B6EFAB9C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-promobitIOS/Pods-promobitIOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-promobitIOS/Pods-promobitIOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-promobitIOS/Pods-promobitIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E1AA8C0164FA6454B8C338D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-promobitIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9838D10C28775980C0CDEAD9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-promobitIOS-promobitIOSUITests/Pods-promobitIOS-promobitIOSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-promobitIOS-promobitIOSUITests/Pods-promobitIOS-promobitIOSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-promobitIOS-promobitIOSUITests/Pods-promobitIOS-promobitIOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A656605A68644902ABBC633 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-promobitIOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB1302E25A9080A350B09EBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-promobitIOS-promobitIOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC592120257D723F00AB1338 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACF8601B257EA54100A5BC5D /* Contato.swift in Sources */,
+				AC59212C257D723F00AB1338 /* HomeController.swift in Sources */,
+				ACF86020257EA5A000A5BC5D /* HomeModel.swift in Sources */,
+				AC592128257D723F00AB1338 /* AppDelegate.swift in Sources */,
+				AC59215D257D9EB800AB1338 /* CadastroModel.swift in Sources */,
+				AC59215B257D9EAB00AB1338 /* CadastroPresenter.swift in Sources */,
+				ACF86024257EB0D600A5BC5D /* HomeTableViewCell.swift in Sources */,
+				AC59212A257D723F00AB1338 /* SceneDelegate.swift in Sources */,
+				AC592158257D9E7200AB1338 /* CadastroViewController.swift in Sources */,
+				ACF8601E257EA58C00A5BC5D /* HomePresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC592136257D724300AB1338 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC59213F257D724300AB1338 /* promobitIOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC592141257D724300AB1338 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC59214A257D724300AB1338 /* promobitIOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC59213C257D724300AB1338 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC592123257D723F00AB1338 /* promobitIOS */;
+			targetProxy = AC59213B257D724300AB1338 /* PBXContainerItemProxy */;
+		};
+		AC592147257D724300AB1338 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC592123257D723F00AB1338 /* promobitIOS */;
+			targetProxy = AC592146257D724300AB1338 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AC59212D257D723F00AB1338 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC59212E257D723F00AB1338 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC592132257D724300AB1338 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC592133257D724300AB1338 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC59214C257D724300AB1338 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC59214D257D724300AB1338 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC59214F257D724300AB1338 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEF22D2DC3AF4A9B6D88EAAF /* Pods-promobitIOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = promobitIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = teste.promobitIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC592150257D724300AB1338 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC9983366AD09544A197224A /* Pods-promobitIOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = promobitIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = teste.promobitIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AC592152257D724300AB1338 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD4E1A6A07028459122BC99B /* Pods-promobitIOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = promobitIOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = teste.promobitIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/promobitIOS.app/promobitIOS";
+			};
+			name = Debug;
+		};
+		AC592153257D724300AB1338 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 840CC87550047B8A0D85E523 /* Pods-promobitIOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = promobitIOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = teste.promobitIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/promobitIOS.app/promobitIOS";
+			};
+			name = Release;
+		};
+		AC592155257D724300AB1338 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10F838EBD3A38FC5305AA19B /* Pods-promobitIOS-promobitIOSUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = promobitIOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = teste.promobitIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = promobitIOS;
+			};
+			name = Debug;
+		};
+		AC592156257D724300AB1338 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D5BB0C26866E701DFF3C25C /* Pods-promobitIOS-promobitIOSUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = promobitIOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = teste.promobitIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = promobitIOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC59211F257D723F00AB1338 /* Build configuration list for PBXProject "promobitIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC59214C257D724300AB1338 /* Debug */,
+				AC59214D257D724300AB1338 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC59214E257D724300AB1338 /* Build configuration list for PBXNativeTarget "promobitIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC59214F257D724300AB1338 /* Debug */,
+				AC592150257D724300AB1338 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC592151257D724300AB1338 /* Build configuration list for PBXNativeTarget "promobitIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC592152257D724300AB1338 /* Debug */,
+				AC592153257D724300AB1338 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC592154257D724300AB1338 /* Build configuration list for PBXNativeTarget "promobitIOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC592155257D724300AB1338 /* Debug */,
+				AC592156257D724300AB1338 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC59211C257D723F00AB1338 /* Project object */;
+}

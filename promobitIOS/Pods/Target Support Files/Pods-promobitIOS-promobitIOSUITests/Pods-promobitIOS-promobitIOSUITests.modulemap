@@ -1,0 +1,6 @@
+framework module Pods_promobitIOS_promobitIOSUITests {
+  umbrella header "Pods-promobitIOS-promobitIOSUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
