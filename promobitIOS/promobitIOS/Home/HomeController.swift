@@ -20,8 +20,8 @@ class HomeViewController: UIViewController, UITableViewDelegate {
     @IBOutlet weak var addContatoButton: UIButton!
     let homePresenter = HomePresenter()
     var contatoList: [Contato] = []
-    let menu  = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "Menu") as! MenuViewController
-
+//    let menu  = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "menuController") as! MenuViewController
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         table.delegate = self
@@ -60,10 +60,7 @@ class HomeViewController: UIViewController, UITableViewDelegate {
       
         if contatos.count > 0 {
            self.contatoList = contatos
-            print("\(contatos.count)")
             self.table.separatorStyle = .singleLine
-//            self.view.addSubview(self.table)
-            self.constraintMensagem.removeFromSuperview()
             self.table.reloadData()
          
         }else{
@@ -107,6 +104,7 @@ class HomeViewController: UIViewController, UITableViewDelegate {
        }
     
     func showMenu(){
+        let menu = storyboard?.instantiateViewController(identifier: "menuController") as! MenuViewController
         let sideMenu = UISideMenuNavigationController(rootViewController: menu)
         sideMenu.setNavigationBarHidden(true, animated: false)
         SideMenuManager.defaultManager.menuBlurEffectStyle  = .regular
