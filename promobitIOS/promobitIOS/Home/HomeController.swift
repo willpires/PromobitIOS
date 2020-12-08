@@ -50,7 +50,7 @@ class HomeViewController: UIViewController, UITableViewDelegate {
     addContatoButton.layer.shadowRadius = 5
     addContatoButton.layer.shadowOpacity = 0.25
     addContatoButton.layer.shadowOffset = CGSize(width: 0, height: 10)
-    self.table.addSubview(constraintMensagem)
+   // self.table.addSubview(constraintMensagem)
     //self.constraintMensagem.removeFromSuperview()
 
     homePresenter.get(sucesso: { (contatos) in
@@ -63,6 +63,8 @@ class HomeViewController: UIViewController, UITableViewDelegate {
             self.constraintMensagem.removeFromSuperview()
             self.table.reloadData()
          
+        }else{
+            
         }
         
     }, error: {
@@ -83,11 +85,13 @@ class HomeViewController: UIViewController, UITableViewDelegate {
     
     func showMenu(){
         let sideMenu = UISideMenuNavigationController(rootViewController: menu)
-        sideMenu.leftSide = true
+        sideMenu.setNavigationBarHidden(true, animated: false)
+        SideMenuManager.defaultManager.menuBlurEffectStyle  = .regular
         SideMenuManager.default.menuLeftNavigationController = sideMenu
         SideMenuManager.default.menuAddPanGestureToPresent(toView: view)
+
         present(sideMenu, animated: true, completion: nil)
-        
+
     }
     
 }

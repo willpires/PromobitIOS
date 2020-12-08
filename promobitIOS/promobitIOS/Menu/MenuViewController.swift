@@ -11,10 +11,8 @@ import UIKit
 class MenuViewController: UIViewController,UITableViewDelegate {
 
     
-    @IBOutlet weak var tabView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        tabView.delegate = self 
         
         // Do any additional setup after loading the view.
     }
