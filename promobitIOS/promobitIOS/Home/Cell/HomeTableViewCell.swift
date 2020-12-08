@@ -21,8 +21,7 @@ class HomeTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-      //  imagemView.layer.cornerRadius = imagemView.frame.height / 2.0
-        // Initialization code
+        imagemView.layer.cornerRadius = 30      // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

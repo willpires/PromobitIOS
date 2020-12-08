@@ -25,6 +25,7 @@ class HomeModel {
                         let item  = item as![String: Any]
                         contato.user_name = item["user_name"] as! String
                         contato.user_lastname = item["user_lastname"] as! String
+                        contato.user_company = item["user_company"] as! String
                         contato.user_photo = item["user_photo"] as! String
                         return contato
                     })

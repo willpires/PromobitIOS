@@ -7,20 +7,26 @@
 //
 
 import UIKit
+import SideMenu
 
+@available(iOS 13.0, *)
 class HomeViewController: UIViewController, UITableViewDelegate {
 
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var constraintMensagem: UIStackView!
 
+    @IBOutlet weak var menuButtonItem: UIBarButtonItem!
     @IBOutlet weak var addContatoButton: UIButton!
     let homePresenter = HomePresenter()
     var contatoList: [Contato] = []
-    
+    let menu  = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "Menu") as! MenuViewController
+
     override func viewDidLoad() {
         super.viewDidLoad()
         table.delegate = self
         table.dataSource = self
+
+        
         initValues()
         //table.removeFromSuperview()
        // a()
@@ -40,7 +46,7 @@ class HomeViewController: UIViewController, UITableViewDelegate {
     
    func  initValues(){
         
-    addContatoButton.layer.cornerRadius = addContatoButton.frame.height / 2.0
+    addContatoButton.layer.cornerRadius = 30
     addContatoButton.layer.shadowRadius = 5
     addContatoButton.layer.shadowOpacity = 0.25
     addContatoButton.layer.shadowOffset = CGSize(width: 0, height: 10)
@@ -70,9 +76,24 @@ class HomeViewController: UIViewController, UITableViewDelegate {
       
     }
     
+    @IBAction func showAdd(_ sender: Any) {
+        showMenu()
+    }
+    
+    
+    func showMenu(){
+        let sideMenu = UISideMenuNavigationController(rootViewController: menu)
+        sideMenu.leftSide = true
+        SideMenuManager.default.menuLeftNavigationController = sideMenu
+        SideMenuManager.default.menuAddPanGestureToPresent(toView: view)
+        present(sideMenu, animated: true, completion: nil)
+        
+    }
+    
 }
 
 
+@available(iOS 13.0, *)
 extension HomeViewController: UITableViewDataSource {
         
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -82,8 +103,8 @@ extension HomeViewController: UITableViewDataSource {
         
    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HomeTableViewCell
-//        let contato = contatoList[indexPath.row]
-//        cell.prepareCell(item: contato)
+        let contato = contatoList[indexPath.row]
+        cell.prepareCell(item: contato)
 
         return cell
     }

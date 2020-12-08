@@ -31,7 +31,8 @@ class CadastroViewController: UIViewController {
     @IBOutlet weak var salvarButton: UIButton!
     
     
-    override func viewDidLoad() {
+    override func viewDidLoad() { 
+        
         super.viewDidLoad()
         initValues()
         // Do any additional setup after loading the view.
