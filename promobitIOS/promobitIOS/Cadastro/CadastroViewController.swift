@@ -99,33 +99,48 @@ class CadastroViewController: UIViewController {
     }
     
     func validaEmail()->Bool{
-         if  emailTextField.text!.isEmpty {
+         if  emailTextField.text!.isEmpty{
             mensagemEmailErrorLabel.text  = "Digite seu email"
             mensagemEmailErrorLabel.textColor  = .red
                    
             return false
-        }else{
+         }else if isEmailvalido(text: emailTextField.text!){
+            
             mensagemEmailErrorLabel.textColor  = .white
             return true
+            
+         }else {
+             mensagemEmailErrorLabel.text  = "Digite um email válido!"
+            mensagemEmailErrorLabel.textColor  = .red
+            return false
         }
         
     }
     
+    func isEmailvalido(text: String) ->Bool{
+        let regex  = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}"
+        
+        let format = "SELF MATCHES %@"
+        return NSPredicate(format: format, regex).evaluate(with: text)
+    }
+    
     func validaTelefone()->Bool{
          if  telefoneTextField.text!.isEmpty {
-            mensagemTelefoneErrorLabel.text  = "Digite seu email"
+            mensagemTelefoneErrorLabel.text  = "Digite seu telefone"
             mensagemTelefoneErrorLabel.textColor = .red
             return false
         }else {
            mensagemTelefoneErrorLabel.textColor = .white
           return true
-             }
+            
         }
+      
+    }
     
     func validaSite() -> Bool {
         
         if  siteTextField.text!.isEmpty {
-            mensagemSiteErrorLabel.text  = "Digite seu email"
+            mensagemSiteErrorLabel.text  = "Digite um site"
             mensagemSiteErrorLabel.textColor = .red
             
             return false
