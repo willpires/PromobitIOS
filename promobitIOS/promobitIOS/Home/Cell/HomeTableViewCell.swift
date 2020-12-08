@@ -21,8 +21,14 @@ class HomeTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        imagemView.layer.cornerRadius = 30      // Initialization code
+        initValues()
     }
+    
+    func initValues(){
+        imagemView.layer.cornerRadius = 30      // Initialization code
+        novoButton.layer.cornerRadius = 15
+    }
+    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -36,8 +42,15 @@ class HomeTableViewCell: UITableViewCell {
            if let url = URL(string: item.user_photo){
                imagemView.kf.setImage(with: url)
            }else {
-               imagemView.image = nil
            }
+        print("-- .\(item.user_novo) nome \(item.user_name)")
+            if !item.user_novo {
+                novoButton.isHidden = true
+            }else {
+                novoButton.isHidden = false
+
+        }
+        
        }
     
     

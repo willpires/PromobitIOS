@@ -27,6 +27,7 @@ class HomeModel {
                         contato.user_lastname = item["user_lastname"] as! String
                         contato.user_company = item["user_company"] as! String
                         contato.user_photo = item["user_photo"] as! String
+                        contato.user_novo = item["user_novo"] as! Bool
                         return contato
                     })
                 sucesso(lista)

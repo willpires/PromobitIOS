@@ -14,7 +14,8 @@ class HomeViewController: UIViewController, UITableViewDelegate {
 
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var constraintMensagem: UIStackView!
-
+    @IBOutlet weak var filtroButtomItem: UIBarButtonItem!
+    
     @IBOutlet weak var menuButtonItem: UIBarButtonItem!
     @IBOutlet weak var addContatoButton: UIButton!
     let homePresenter = HomePresenter()
@@ -33,6 +34,8 @@ class HomeViewController: UIViewController, UITableViewDelegate {
       //  constraintMensagem.removeFromSuperview()
         // Do any additional setup after loading the view.
        // teste()
+        ordenacaoNomeAandZ()
+        
     }
     
     
@@ -82,6 +85,26 @@ class HomeViewController: UIViewController, UITableViewDelegate {
         showMenu()
     }
     
+    @IBAction func filtro(_ sender: Any) {
+        
+        
+    }
+    
+    func ordenacaoNomeAandZ(){
+       
+    }
+    
+    func ordenacaoNomeZandA(){
+        
+    }
+    
+    func ordenacaoEmpresaAandZ(){
+        
+    }
+    
+     func ordenacaoEmpresaZandA(){
+           
+       }
     
     func showMenu(){
         let sideMenu = UISideMenuNavigationController(rootViewController: menu)

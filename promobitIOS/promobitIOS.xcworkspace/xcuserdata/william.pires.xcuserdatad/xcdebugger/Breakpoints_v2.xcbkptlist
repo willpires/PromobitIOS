@@ -109,8 +109,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "48"
             endingLineNumber = "48"
-            landmarkName = "initValues()"
-            landmarkType = "7">
+            landmarkName = "HomeViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -125,15 +125,15 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
             endingLineNumber = "49"
-            landmarkName = "initValues()"
-            landmarkType = "7">
+            landmarkName = "HomeViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "50D89CCC-82FE-4929-B72A-1F02F90C3514"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "promobitIOS/Home/HomeController.swift"
@@ -143,13 +143,45 @@
             endingLineNumber = "59"
             landmarkName = "initValues()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "50D89CCC-82FE-4929-B72A-1F02F90C3514 - 408178d5941a1f9b"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "promobitIOS.HomeViewController.initValues() -&gt; ()"
+                  moduleName = "promobitIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/william.pires/Documents/PromobitIOS/promobitIOS/promobitIOS/Home/HomeController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "1214">
+               </Location>
+               <Location
+                  uuid = "50D89CCC-82FE-4929-B72A-1F02F90C3514 - 46a27c9a636fd92c"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;promobitIOS.Contato&gt;) -&gt; () in promobitIOS.HomeViewController.initValues() -&gt; ()"
+                  moduleName = "promobitIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/william.pires/Documents/PromobitIOS/promobitIOS/promobitIOS/Home/HomeController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "116">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "9A59910C-FF15-4091-A76D-2B103DE7B495"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "promobitIOS/Home/HomeController.swift"
@@ -171,8 +203,8 @@
             filePath = "promobitIOS/Home/Cell/HomeTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "prepareCell(item:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -187,8 +219,8 @@
             filePath = "promobitIOS/Home/Cell/HomeTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "prepareCell(item:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -222,6 +254,22 @@
             startingLineNumber = "65"
             endingLineNumber = "65"
             landmarkName = "camposValidos()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "735C3506-63C3-460D-B8F0-08659A1491C7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "promobitIOS/Home/HomeController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "showMenu()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
