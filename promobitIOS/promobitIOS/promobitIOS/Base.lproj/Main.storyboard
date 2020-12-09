@@ -51,13 +51,13 @@
                                                     </state>
                                                 </button>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S2c-1h-MlE">
-                                                    <rect key="frame" x="6" y="18" width="67" height="67"/>
+                                                    <rect key="frame" x="16" y="18" width="67" height="67"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="S2c-1h-MlE" secondAttribute="height" multiplier="1:1" id="8l0-0a-Fll"/>
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dHl-D8-xCg">
-                                                    <rect key="frame" x="85" y="30" width="150" height="49"/>
+                                                    <rect key="frame" x="95" y="30" width="150" height="49"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXA-dW-iLE">
                                                             <rect key="frame" x="0.0" y="0.0" width="150" height="20.333333333333332"/>
@@ -81,7 +81,7 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="S2c-1h-MlE" firstAttribute="leading" secondItem="jQS-Zm-Aaj" secondAttribute="leading" constant="6" id="37F-qn-twr"/>
+                                                <constraint firstItem="S2c-1h-MlE" firstAttribute="leading" secondItem="jQS-Zm-Aaj" secondAttribute="leading" constant="16" id="37F-qn-twr"/>
                                                 <constraint firstItem="dHl-D8-xCg" firstAttribute="top" secondItem="jQS-Zm-Aaj" secondAttribute="topMargin" constant="19" id="8Ga-c7-fnu"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="AsY-rq-lCW" secondAttribute="bottom" constant="32" id="AIg-ZH-27Q"/>
                                                 <constraint firstItem="AsY-rq-lCW" firstAttribute="leading" secondItem="A9t-Lf-Jca" secondAttribute="trailing" id="MUe-rG-5us"/>
