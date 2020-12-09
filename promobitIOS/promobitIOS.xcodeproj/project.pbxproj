@@ -13,6 +13,8 @@
 		AC37BD51258045B900FF5811 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC37BD50258045B900FF5811 /* Constants.swift */; };
 		AC37BD542580473A00FF5811 /* ContatosRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC37BD532580473A00FF5811 /* ContatosRepository.swift */; };
 		AC37BD622580561900FF5811 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC37BD612580561900FF5811 /* GoogleService-Info.plist */; };
+		AC37BD6425805B9B00FF5811 /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC37BD6325805B9B00FF5811 /* HomeView.xib */; };
+		AC37BD6625805F7600FF5811 /* mensagemNotContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC37BD6525805F7500FF5811 /* mensagemNotContactView.swift */; };
 		AC592128257D723F00AB1338 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC592127257D723F00AB1338 /* AppDelegate.swift */; };
 		AC59212A257D723F00AB1338 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC592129257D723F00AB1338 /* SceneDelegate.swift */; };
 		AC59212C257D723F00AB1338 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC59212B257D723F00AB1338 /* HomeController.swift */; };
@@ -54,6 +56,8 @@
 		AC37BD50258045B900FF5811 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AC37BD532580473A00FF5811 /* ContatosRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatosRepository.swift; sourceTree = "<group>"; };
 		AC37BD612580561900FF5811 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AC37BD6325805B9B00FF5811 /* HomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
+		AC37BD6525805F7500FF5811 /* mensagemNotContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mensagemNotContactView.swift; sourceTree = "<group>"; };
 		AC592124257D723F00AB1338 /* promobitIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = promobitIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC592127257D723F00AB1338 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC592129257D723F00AB1338 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,13 +153,13 @@
 		AC59211B257D723F00AB1338 = {
 			isa = PBXGroup;
 			children = (
-				AC37BD612580561900FF5811 /* GoogleService-Info.plist */,
 				AC592126257D723F00AB1338 /* promobitIOS */,
 				AC59213D257D724300AB1338 /* promobitIOSTests */,
 				AC592148257D724300AB1338 /* promobitIOSUITests */,
 				AC592125257D723F00AB1338 /* Products */,
 				76E71E2ACDAD16C4BC71CB45 /* Pods */,
 				7481B6CD371234DD03FB7FAD /* Frameworks */,
+				AC37BD612580561900FF5811 /* GoogleService-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -228,6 +232,8 @@
 				ACF86022257EB0B500A5BC5D /* Cell */,
 				AC59212B257D723F00AB1338 /* HomeController.swift */,
 				ACF8601D257EA58C00A5BC5D /* HomePresenter.swift */,
+				AC37BD6325805B9B00FF5811 /* HomeView.xib */,
+				AC37BD6525805F7500FF5811 /* mensagemNotContactView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -361,6 +367,7 @@
 				AC37BD622580561900FF5811 /* GoogleService-Info.plist in Resources */,
 				AC592131257D724300AB1338 /* Assets.xcassets in Resources */,
 				AC59212F257D723F00AB1338 /* Main.storyboard in Resources */,
+				AC37BD6425805B9B00FF5811 /* HomeView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +501,7 @@
 				AC592128257D723F00AB1338 /* AppDelegate.swift in Sources */,
 				ACFFC736257F0BFD00EE00EB /* MenuViewController.swift in Sources */,
 				ACF86024257EB0D600A5BC5D /* HomeTableViewCell.swift in Sources */,
+				AC37BD6625805F7600FF5811 /* mensagemNotContactView.swift in Sources */,
 				AC59212A257D723F00AB1338 /* SceneDelegate.swift in Sources */,
 				AC592158257D9E7200AB1338 /* CadastroContatoViewController.swift in Sources */,
 				ACF8601E257EA58C00A5BC5D /* HomePresenter.swift in Sources */,

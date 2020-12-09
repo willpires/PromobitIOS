@@ -9,6 +9,7 @@
 import UIKit
 import SideMenu
 import FirebaseAnalytics
+import PKHUD
 
 @available(iOS 13.0, *)
 class HomeViewController: UIViewController, UITableViewDelegate {
@@ -27,32 +28,47 @@ class HomeViewController: UIViewController, UITableViewDelegate {
         table.delegate = self
         table.dataSource = self
         initValues()
-    
+      
+        
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        initValues()
+    }
     
    func  initValues(){
-        
+    HUD.show(.progress)
     addContatoButton.layer.cornerRadius = 30
     addContatoButton.layer.shadowRadius = 5
     addContatoButton.layer.shadowOpacity = 0.25
     addContatoButton.layer.shadowOffset = CGSize(width: 0, height: 10)
-   // self.table.addSubview(constraintMensagem)
-    //self.constraintMensagem.removeFromSuperview()
+    
+    if let mensagem = Bundle.main.loadNibNamed("HomeView", owner: Any?.self, options: nil)?.first as? mensagemNotContactView {
+        self.view.addSubview(mensagem)
+    }
 
     homePresenter.get(sucesso: { (contatos) in
-      
         if contatos.count > 0 {
            self.contatoList = contatos
             self.table.separatorStyle = .singleLine
-            self.table.reloadData()
-         
-        }else{
+              if let mensagem = Bundle.main.loadNibNamed("HomeView", owner: Any?.self, options: nil)?.first as? mensagemNotContactView {
+                self.view.willRemoveSubview(mensagem)
+                self.view.addSubview(self.table)
+                self.view.addSubview(self.addContatoButton)
+                
+                    }
             
+            self.table.reloadData()
+            HUD.hide()
+
         }
-        
+
     }, error: {
-       
+        HUD.flash(.error)
+        
+        if let mensagem = Bundle.main.loadNibNamed("HomeView", owner: Any?.self, options: nil)?.first as? mensagemNotContactView {
+               self.table.addSubview(mensagem)
+           }
         
     })
     
