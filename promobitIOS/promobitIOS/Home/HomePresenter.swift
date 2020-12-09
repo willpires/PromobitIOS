@@ -9,11 +9,11 @@
 import Foundation
 
 class HomePresenter {
-    let model = HomeModel()
+    let contatosRepository = ContatosRepository()
     
     func get(sucesso: @escaping ([Contato]) -> Void, error: @escaping ()->Void){
         
-        model.getContato(sucesso: { (lista) in
+        contatosRepository.requestContatos(sucesso: { (lista) in
             sucesso(lista)
         }, error: {
             error()

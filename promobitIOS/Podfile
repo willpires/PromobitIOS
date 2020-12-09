@@ -6,6 +6,7 @@ target 'promobitIOS' do
   pod 'Alamofire', '~> 5.2'
   pod 'Kingfisher', '~> 5.0'
   pod 'SideMenu', '~> 5.0'
+  pod 'Firebase/Analytics'
   use_frameworks!
 
   # Pods for promobitIOS

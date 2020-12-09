@@ -9,7 +9,7 @@
 import UIKit
 
 @available(iOS 13.0, *)
-class CadastroViewController: UIViewController {
+class CadastroContatoViewController: UIViewController {
 //TextFied
     @IBOutlet weak var nomeTextFied: UITextField!
     @IBOutlet weak var empresaTextFiedl: UITextField!
@@ -30,10 +30,7 @@ class CadastroViewController: UIViewController {
     
     @IBOutlet weak var cancelarButton: UIButton!
     @IBOutlet weak var salvarButton: UIButton!
-    
     @IBOutlet weak var sucessoView: UIView!
-    
-   
     
     
     override func viewDidLoad() { 
@@ -49,7 +46,6 @@ class CadastroViewController: UIViewController {
         cancelarButton.layer.borderWidth = 1.2
         cancelarButton.layer.borderColor = color.cgColor
         salvarButton.layer.cornerRadius = 2
-        
         mensagemNomeErrorLabel.textColor = .white
         mensagemEmpresaErrorLabel.textColor = .white
         mensagemEmailErrorLabel.textColor = .white
@@ -60,7 +56,7 @@ class CadastroViewController: UIViewController {
     }
     
     
-    func camposValidos()->Bool{
+    func camposValidos() -> Bool{
       
      let campos = [validaNome(),validaEmpresa(),validaSite(),validaEmail(),validaTelefone()]
         for campo in campos {
@@ -68,15 +64,16 @@ class CadastroViewController: UIViewController {
                 return false
             }
         }
+        
         return true
     }
     
-    func validaNome()->Bool{
+    func validaNome() -> Bool {
         if nomeTextFied.text!.isEmpty  {
             mensagemNomeErrorLabel.text = "Digite seu nome"
             mensagemNomeErrorLabel.textColor = .red
-                 
             return false
+            
         }else {
             mensagemNomeErrorLabel.textColor = .white
             return true
@@ -84,54 +81,55 @@ class CadastroViewController: UIViewController {
         }
     }
     
-    func validaEmpresa()->Bool{
+    func validaEmpresa() -> Bool {
          
         if empresaTextFiedl.text!.isEmpty {
             mensagemEmpresaErrorLabel.text  = "Digite o nome da empresa"
             mensagemEmpresaErrorLabel.textColor = .red
-                   
             return false
+            
         }else{
             mensagemEmpresaErrorLabel.textColor = .white
             return true
-            }
+           
+        }
         
     }
     
-    func validaEmail()->Bool{
+    func validaEmail() -> Bool {
          if  emailTextField.text!.isEmpty{
             mensagemEmailErrorLabel.text  = "Digite seu email"
             mensagemEmailErrorLabel.textColor  = .red
-                   
             return false
+            
          }else if isEmailvalido(text: emailTextField.text!){
             
             mensagemEmailErrorLabel.textColor  = .white
             return true
             
          }else {
-             mensagemEmailErrorLabel.text  = "Digite um email válido!"
+            mensagemEmailErrorLabel.text  = "Digite um email válido!"
             mensagemEmailErrorLabel.textColor  = .red
             return false
         }
         
     }
     
-    func isEmailvalido(text: String) ->Bool{
+    func isEmailvalido(text: String) ->Bool {
         let regex  = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}"
-        
         let format = "SELF MATCHES %@"
         return NSPredicate(format: format, regex).evaluate(with: text)
     }
     
-    func validaTelefone()->Bool{
+    func validaTelefone() -> Bool {
          if  telefoneTextField.text!.isEmpty {
             mensagemTelefoneErrorLabel.text  = "Digite seu telefone"
             mensagemTelefoneErrorLabel.textColor = .red
             return false
+            
         }else {
            mensagemTelefoneErrorLabel.textColor = .white
-          return true
+           return true
             
         }
       
@@ -142,8 +140,8 @@ class CadastroViewController: UIViewController {
         if  siteTextField.text!.isEmpty {
             mensagemSiteErrorLabel.text  = "Digite um site"
             mensagemSiteErrorLabel.textColor = .red
-            
             return false
+            
         }else{
             mensagemSiteErrorLabel.textColor = .white
             return true
@@ -154,12 +152,14 @@ class CadastroViewController: UIViewController {
     
     @IBAction func cancelar(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+        
     }
     
     @IBAction func salvar(_ sender: Any) {
         if camposValidos() {
             sucessoView.isHidden = false
         }
+        
     }
     
     

@@ -158,7 +158,7 @@
         <!--Adicionar contatos-->
         <scene sceneID="rbQ-qc-MHW">
             <objects>
-                <viewController storyboardIdentifier="cadastro" id="szF-It-hPr" customClass="CadastroViewController" customModule="promobitIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="cadastro" id="szF-It-hPr" customClass="CadastroContatoViewController" customModule="promobitIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iXq-2l-V6u">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -304,7 +304,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" id="qgd-6B-O1E">
+                            <view hidden="YES" contentMode="scaleToFill" id="qgd-6B-O1E">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
@@ -534,10 +534,10 @@
             </objects>
             <point key="canvasLocation" x="-536" y="138"/>
         </scene>
-        <!--Cadastro View Controller-->
+        <!--Cadastro Contato View Controller-->
         <scene sceneID="4p5-Oz-E8F">
             <objects>
-                <viewController storyboardIdentifier="Sucesso" id="STW-W5-J5Y" customClass="CadastroViewController" customModule="promobitIOS" customModuleProvider="target" sceneMemberID="viewController"/>
+                <viewController storyboardIdentifier="Sucesso" id="STW-W5-J5Y" customClass="CadastroContatoViewController" customModule="promobitIOS" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ujg-VQ-85c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2837.5999999999999" y="123.68815592203899"/>

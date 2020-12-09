@@ -8,6 +8,7 @@
 
 import UIKit
 import SideMenu
+import FirebaseAnalytics
 
 @available(iOS 13.0, *)
 class HomeViewController: UIViewController, UITableViewDelegate {
@@ -20,30 +21,13 @@ class HomeViewController: UIViewController, UITableViewDelegate {
     @IBOutlet weak var addContatoButton: UIButton!
     let homePresenter = HomePresenter()
     var contatoList: [Contato] = []
-//    let menu  = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "menuController") as! MenuViewController
     
     override func viewDidLoad() {
         super.viewDidLoad()
         table.delegate = self
         table.dataSource = self
-
-        
         initValues()
-        //table.removeFromSuperview()
-       // a()
-      //  constraintMensagem.removeFromSuperview()
-        // Do any additional setup after loading the view.
-       // teste()
-        ordenacaoNomeAandZ()
-        
-    }
     
-    
-    func a(){
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-//            self.view.addSubview(self.table)
-//        }
-        self.view.addSubview(self.table)
     }
     
     
@@ -75,7 +59,9 @@ class HomeViewController: UIViewController, UITableViewDelegate {
     }
 
     @IBAction func add(_ sender: Any) {
-      
+      let params = ["will":"ok"]
+      Analytics.logEvent("testePromobit", parameters: params)
+        
     }
     
     @IBAction func showAdd(_ sender: Any) {

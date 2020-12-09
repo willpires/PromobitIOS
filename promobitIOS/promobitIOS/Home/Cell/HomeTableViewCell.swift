@@ -39,13 +39,15 @@ class HomeTableViewCell: UITableViewCell {
      func prepareCell(item: Contato){
            nomeLabel.text = item.user_name
            empresaLabel.text = item.user_company
-           if let url = URL(string: item.user_photo){
+          
+        if let url = URL(string: item.user_photo){
                imagemView.kf.setImage(with: url)
-           }else {
-           }
-        print("-- .\(item.user_novo) nome \(item.user_name)")
-            if !item.user_novo {
+            
+            }
+        
+        if !item.user_novo {
                 novoButton.isHidden = true
+            
             }else {
                 novoButton.isHidden = false
 

@@ -10,6 +10,9 @@
 		5D5DD370B438575F19F8937F /* Pods_promobitIOS_promobitIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED4D4F3718E0C410062AFAD /* Pods_promobitIOS_promobitIOSUITests.framework */; };
 		7CF7C8DAD5E1E44B70767EE8 /* Pods_promobitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 050A0D69DAB801F46D36F759 /* Pods_promobitIOS.framework */; };
 		7DF73E08401731294B79114C /* Pods_promobitIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE04371DF92BB3B9FD078B0 /* Pods_promobitIOSTests.framework */; };
+		AC37BD51258045B900FF5811 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC37BD50258045B900FF5811 /* Constants.swift */; };
+		AC37BD542580473A00FF5811 /* ContatosRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC37BD532580473A00FF5811 /* ContatosRepository.swift */; };
+		AC37BD622580561900FF5811 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC37BD612580561900FF5811 /* GoogleService-Info.plist */; };
 		AC592128257D723F00AB1338 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC592127257D723F00AB1338 /* AppDelegate.swift */; };
 		AC59212A257D723F00AB1338 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC592129257D723F00AB1338 /* SceneDelegate.swift */; };
 		AC59212C257D723F00AB1338 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC59212B257D723F00AB1338 /* HomeController.swift */; };
@@ -18,12 +21,9 @@
 		AC592134257D724300AB1338 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC592132257D724300AB1338 /* LaunchScreen.storyboard */; };
 		AC59213F257D724300AB1338 /* promobitIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC59213E257D724300AB1338 /* promobitIOSTests.swift */; };
 		AC59214A257D724300AB1338 /* promobitIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC592149257D724300AB1338 /* promobitIOSUITests.swift */; };
-		AC592158257D9E7200AB1338 /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC592157257D9E7200AB1338 /* CadastroViewController.swift */; };
-		AC59215B257D9EAB00AB1338 /* CadastroPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC59215A257D9EAB00AB1338 /* CadastroPresenter.swift */; };
-		AC59215D257D9EB800AB1338 /* CadastroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC59215C257D9EB800AB1338 /* CadastroModel.swift */; };
+		AC592158257D9E7200AB1338 /* CadastroContatoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC592157257D9E7200AB1338 /* CadastroContatoViewController.swift */; };
 		ACF8601B257EA54100A5BC5D /* Contato.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8601A257EA54100A5BC5D /* Contato.swift */; };
 		ACF8601E257EA58C00A5BC5D /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8601D257EA58C00A5BC5D /* HomePresenter.swift */; };
-		ACF86020257EA5A000A5BC5D /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8601F257EA5A000A5BC5D /* HomeModel.swift */; };
 		ACF86024257EB0D600A5BC5D /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF86023257EB0D600A5BC5D /* HomeTableViewCell.swift */; };
 		ACFFC736257F0BFD00EE00EB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFFC735257F0BFD00EE00EB /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
@@ -51,6 +51,9 @@
 		1AE04371DF92BB3B9FD078B0 /* Pods_promobitIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_promobitIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D5BB0C26866E701DFF3C25C /* Pods-promobitIOS-promobitIOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-promobitIOS-promobitIOSUITests.release.xcconfig"; path = "Target Support Files/Pods-promobitIOS-promobitIOSUITests/Pods-promobitIOS-promobitIOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		840CC87550047B8A0D85E523 /* Pods-promobitIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-promobitIOSTests.release.xcconfig"; path = "Target Support Files/Pods-promobitIOSTests/Pods-promobitIOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		AC37BD50258045B900FF5811 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AC37BD532580473A00FF5811 /* ContatosRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatosRepository.swift; sourceTree = "<group>"; };
+		AC37BD612580561900FF5811 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AC592124257D723F00AB1338 /* promobitIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = promobitIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC592127257D723F00AB1338 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC592129257D723F00AB1338 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,12 +68,9 @@
 		AC592145257D724300AB1338 /* promobitIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = promobitIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC592149257D724300AB1338 /* promobitIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = promobitIOSUITests.swift; sourceTree = "<group>"; };
 		AC59214B257D724300AB1338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC592157257D9E7200AB1338 /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
-		AC59215A257D9EAB00AB1338 /* CadastroPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroPresenter.swift; sourceTree = "<group>"; };
-		AC59215C257D9EB800AB1338 /* CadastroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroModel.swift; sourceTree = "<group>"; };
+		AC592157257D9E7200AB1338 /* CadastroContatoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroContatoViewController.swift; sourceTree = "<group>"; };
 		ACF8601A257EA54100A5BC5D /* Contato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contato.swift; sourceTree = "<group>"; };
 		ACF8601D257EA58C00A5BC5D /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
-		ACF8601F257EA5A000A5BC5D /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		ACF86023257EB0D600A5BC5D /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		ACFFC735257F0BFD00EE00EB /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		AD4E1A6A07028459122BC99B /* Pods-promobitIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-promobitIOSTests.debug.xcconfig"; path = "Target Support Files/Pods-promobitIOSTests/Pods-promobitIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,9 +130,26 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		AC37BD4F258044CE00FF5811 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				AC37BD50258045B900FF5811 /* Constants.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		AC37BD522580470400FF5811 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				AC37BD532580473A00FF5811 /* ContatosRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		AC59211B257D723F00AB1338 = {
 			isa = PBXGroup;
 			children = (
+				AC37BD612580561900FF5811 /* GoogleService-Info.plist */,
 				AC592126257D723F00AB1338 /* promobitIOS */,
 				AC59213D257D724300AB1338 /* promobitIOSTests */,
 				AC592148257D724300AB1338 /* promobitIOSUITests */,
@@ -155,17 +172,18 @@
 		AC592126257D723F00AB1338 /* promobitIOS */ = {
 			isa = PBXGroup;
 			children = (
+				AC37BD522580470400FF5811 /* Repository */,
+				AC37BD4F258044CE00FF5811 /* Constant */,
 				ACFFC732257F0A9000EE00EB /* Menu */,
-				ACF86021257EA64E00A5BC5D /* Service */,
 				ACF8601C257EA57600A5BC5D /* Home */,
 				ACF86019257EA51A00A5BC5D /* Entites */,
+				AC592159257D9E8000AB1338 /* CadastroContato */,
 				AC592127257D723F00AB1338 /* AppDelegate.swift */,
 				AC592129257D723F00AB1338 /* SceneDelegate.swift */,
 				AC59212D257D723F00AB1338 /* Main.storyboard */,
 				AC592130257D724300AB1338 /* Assets.xcassets */,
 				AC592132257D724300AB1338 /* LaunchScreen.storyboard */,
 				AC592135257D724300AB1338 /* Info.plist */,
-				AC592159257D9E8000AB1338 /* Cadastro */,
 			);
 			path = promobitIOS;
 			sourceTree = "<group>";
@@ -188,14 +206,12 @@
 			path = promobitIOSUITests;
 			sourceTree = "<group>";
 		};
-		AC592159257D9E8000AB1338 /* Cadastro */ = {
+		AC592159257D9E8000AB1338 /* CadastroContato */ = {
 			isa = PBXGroup;
 			children = (
-				AC592157257D9E7200AB1338 /* CadastroViewController.swift */,
-				AC59215A257D9EAB00AB1338 /* CadastroPresenter.swift */,
-				AC59215C257D9EB800AB1338 /* CadastroModel.swift */,
+				AC592157257D9E7200AB1338 /* CadastroContatoViewController.swift */,
 			);
-			path = Cadastro;
+			path = CadastroContato;
 			sourceTree = "<group>";
 		};
 		ACF86019257EA51A00A5BC5D /* Entites */ = {
@@ -212,16 +228,8 @@
 				ACF86022257EB0B500A5BC5D /* Cell */,
 				AC59212B257D723F00AB1338 /* HomeController.swift */,
 				ACF8601D257EA58C00A5BC5D /* HomePresenter.swift */,
-				ACF8601F257EA5A000A5BC5D /* HomeModel.swift */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		ACF86021257EA64E00A5BC5D /* Service */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Service;
 			sourceTree = "<group>";
 		};
 		ACF86022257EB0B500A5BC5D /* Cell */ = {
@@ -350,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC592134257D724300AB1338 /* LaunchScreen.storyboard in Resources */,
+				AC37BD622580561900FF5811 /* GoogleService-Info.plist in Resources */,
 				AC592131257D724300AB1338 /* Assets.xcassets in Resources */,
 				AC59212F257D723F00AB1338 /* Main.storyboard in Resources */,
 			);
@@ -480,16 +489,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACF8601B257EA54100A5BC5D /* Contato.swift in Sources */,
+				AC37BD542580473A00FF5811 /* ContatosRepository.swift in Sources */,
 				AC59212C257D723F00AB1338 /* HomeController.swift in Sources */,
-				ACF86020257EA5A000A5BC5D /* HomeModel.swift in Sources */,
 				AC592128257D723F00AB1338 /* AppDelegate.swift in Sources */,
 				ACFFC736257F0BFD00EE00EB /* MenuViewController.swift in Sources */,
-				AC59215D257D9EB800AB1338 /* CadastroModel.swift in Sources */,
-				AC59215B257D9EAB00AB1338 /* CadastroPresenter.swift in Sources */,
 				ACF86024257EB0D600A5BC5D /* HomeTableViewCell.swift in Sources */,
 				AC59212A257D723F00AB1338 /* SceneDelegate.swift in Sources */,
-				AC592158257D9E7200AB1338 /* CadastroViewController.swift in Sources */,
+				AC592158257D9E7200AB1338 /* CadastroContatoViewController.swift in Sources */,
 				ACF8601E257EA58C00A5BC5D /* HomePresenter.swift in Sources */,
+				AC37BD51258045B900FF5811 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
