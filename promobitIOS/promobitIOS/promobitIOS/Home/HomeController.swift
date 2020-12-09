@@ -47,7 +47,7 @@ class HomeViewController: UIViewController, UITableViewDelegate {
         self.view.addSubview(mensagem)
     }
 
-    homePresenter.get(sucesso: { (contatos) in
+    homePresenter.requestContatos(sucesso: { (contatos) in
         if contatos.count > 0 {
            self.contatoList = contatos
             self.table.separatorStyle = .singleLine

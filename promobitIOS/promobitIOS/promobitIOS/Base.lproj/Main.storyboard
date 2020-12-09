@@ -485,14 +485,6 @@
             </objects>
             <point key="canvasLocation" x="-536" y="138"/>
         </scene>
-        <!--Cadastro Contato View Controller-->
-        <scene sceneID="4p5-Oz-E8F">
-            <objects>
-                <viewController storyboardIdentifier="Sucesso" id="STW-W5-J5Y" customClass="CadastroContatoViewController" customModule="promobitIOS" customModuleProvider="target" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ujg-VQ-85c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2837.5999999999999" y="123.68815592203899"/>
-        </scene>
     </scenes>
     <resources>
         <image name="arrow.left" catalog="system" width="64" height="48"/>

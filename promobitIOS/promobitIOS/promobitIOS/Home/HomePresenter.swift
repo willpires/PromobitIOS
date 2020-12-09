@@ -11,7 +11,7 @@ import Foundation
 class HomePresenter {
     let contatosRepository = ContatosRepository()
     
-    func get(sucesso: @escaping ([Contato]) -> Void, error: @escaping ()->Void){
+    func requestContatos(sucesso: @escaping ([Contato]) -> Void, error: @escaping ()->Void){
         
         contatosRepository.requestContatos(sucesso: { (lista) in
             sucesso(lista)
