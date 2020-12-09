@@ -89,27 +89,11 @@ class HomeViewController: UIViewController, UITableViewDelegate {
         
     }
     
-    func ordenacaoNomeAandZ(){
-       
-    }
-    
-    func ordenacaoNomeZandA(){
-        
-    }
-    
-    func ordenacaoEmpresaAandZ(){
-        
-    }
-    
-     func ordenacaoEmpresaZandA(){
-           
-       }
-    
+
     func showMenu(){
         let menu = storyboard?.instantiateViewController(identifier: "menuController") as! MenuViewController
         let sideMenu = UISideMenuNavigationController(rootViewController: menu)
         sideMenu.setNavigationBarHidden(true, animated: false)
-        SideMenuManager.defaultManager.menuBlurEffectStyle  = .regular
         SideMenuManager.default.menuLeftNavigationController = sideMenu
         SideMenuManager.default.menuAddPanGestureToPresent(toView: view)
 

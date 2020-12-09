@@ -3,32 +3,32 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>284301829469-65um0lua93ctr46gh1n4f3bq985be0ht.apps.googleusercontent.com</string>
+	<string>995019377499-5nk15dkufdcsmbef4k1u9ig7agubagmm.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.284301829469-65um0lua93ctr46gh1n4f3bq985be0ht</string>
+	<string>com.googleusercontent.apps.995019377499-5nk15dkufdcsmbef4k1u9ig7agubagmm</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDczPbu2whmC_IoQClhpaOT4TyWsvFtuF8</string>
+	<string>AIzaSyDqxahYHKfIK28EHXvzG_7hg1Hnuitoi2U</string>
 	<key>GCM_SENDER_ID</key>
-	<string>284301829469</string>
+	<string>995019377499</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>promobitIOS</string>
 	<key>PROJECT_ID</key>
-	<string>promobit-2dfe3</string>
+	<string>promobitios</string>
 	<key>STORAGE_BUCKET</key>
-	<string>promobit-2dfe3.appspot.com</string>
+	<string>promobitios.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_GCM_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:284301829469:ios:0c77f12efd1d70ff9774b4</string>
+	<string>1:995019377499:ios:636ecabfcdbd2ad177287e</string>
 </dict>
 </plist>

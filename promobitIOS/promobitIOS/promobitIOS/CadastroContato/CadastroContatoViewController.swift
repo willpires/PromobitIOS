@@ -9,7 +9,7 @@
 import UIKit
 
 @available(iOS 13.0, *)
-class CadastroContatoViewController: UIViewController {
+class CadastroContatoViewController: UIViewController, UITextFieldDelegate {
 //TextFied
     @IBOutlet weak var nomeTextFied: UITextField!
     @IBOutlet weak var empresaTextFiedl: UITextField!
@@ -17,6 +17,7 @@ class CadastroContatoViewController: UIViewController {
     @IBOutlet weak var telefoneTextField: UITextField!
     @IBOutlet weak var siteTextField: UITextField!
     @IBOutlet weak var addNotaTextField: UITextField!
+    
     
 //Label
     @IBOutlet weak var mensagemNomeErrorLabel: UILabel!
@@ -30,7 +31,6 @@ class CadastroContatoViewController: UIViewController {
     
     @IBOutlet weak var cancelarButton: UIButton!
     @IBOutlet weak var salvarButton: UIButton!
-    @IBOutlet weak var sucessoView: UIView!
     
     
     override func viewDidLoad() { 
@@ -52,7 +52,13 @@ class CadastroContatoViewController: UIViewController {
         mensagemTelefoneErrorLabel.textColor = .white
         mensagemSiteErrorLabel.textColor = .white
         mensagemAddNotaErrorLabel.textColor = .white
-        sucessoView.isHidden = true
+        nomeTextFied.delegate = self
+        emailTextField.delegate = self
+        empresaTextFiedl.delegate = self
+        telefoneTextField.delegate = self
+        siteTextField.delegate = self
+        addNotaTextField.delegate = self
+        
     }
     
     
@@ -151,23 +157,73 @@ class CadastroContatoViewController: UIViewController {
     
     
     @IBAction func cancelar(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-        
+        navigationController?.popViewController(animated: true)
+
     }
     
     @IBAction func salvar(_ sender: Any) {
         if camposValidos() {
-            sucessoView.isHidden = false
+            
+              if let mensagem = Bundle.main.loadNibNamed("SucessoView", owner: Any?.self, options: nil)?.first as? SucessoView {
+                mensagem.mensagemLabel.text = "Contado\nadicionado com\nsuceso!"
+                let tap = UITapGestureRecognizer(target: self, action: #selector(voltar(sender:)))
+                mensagem.voltar.addGestureRecognizer(tap)
+                self.view.addSubview(mensagem)
+                
+              }
+            
         }
         
     }
     
     
-     @IBAction func sucessoVolta(_ sender: Any) {
-        sucessoView.isHidden = true
-        dismiss(animated: true, completion: nil)
+    @objc func voltar(sender:UITapGestureRecognizer ){
+        navigationController?.popViewController(animated: true)
         
-       }    /*
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        if textField == nomeTextFied {
+            nomeTextFied.resignFirstResponder()
+            empresaTextFiedl.becomeFirstResponder()
+        }
+        
+        if textField == empresaTextFiedl {
+            empresaTextFiedl.resignFirstResponder()
+            emailTextField.becomeFirstResponder()
+        }
+        
+        if textField == emailTextField {
+            emailTextField.resignFirstResponder()
+            telefoneTextField.becomeFirstResponder()
+        }
+        
+         if textField == telefoneTextField {
+            telefoneTextField.resignFirstResponder()
+            siteTextField.becomeFirstResponder()
+            
+        }
+               
+        if textField == siteTextField {
+            siteTextField.resignFirstResponder()
+            addNotaTextField.becomeFirstResponder()
+        }
+        
+        if textField == addNotaTextField {
+            addNotaTextField.resignFirstResponder()
+        }
+        
+        return true
+    }
+    
+    
+    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation

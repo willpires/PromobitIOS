@@ -24,6 +24,8 @@
 		AC59213F257D724300AB1338 /* promobitIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC59213E257D724300AB1338 /* promobitIOSTests.swift */; };
 		AC59214A257D724300AB1338 /* promobitIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC592149257D724300AB1338 /* promobitIOSUITests.swift */; };
 		AC592158257D9E7200AB1338 /* CadastroContatoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC592157257D9E7200AB1338 /* CadastroContatoViewController.swift */; };
+		AC81514E25808399007F470D /* SucessoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC81514D25808399007F470D /* SucessoView.xib */; };
+		AC815150258084A2007F470D /* SucessoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC81514F258084A2007F470D /* SucessoView.swift */; };
 		ACF8601B257EA54100A5BC5D /* Contato.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8601A257EA54100A5BC5D /* Contato.swift */; };
 		ACF8601E257EA58C00A5BC5D /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8601D257EA58C00A5BC5D /* HomePresenter.swift */; };
 		ACF86024257EB0D600A5BC5D /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF86023257EB0D600A5BC5D /* HomeTableViewCell.swift */; };
@@ -73,6 +75,8 @@
 		AC592149257D724300AB1338 /* promobitIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = promobitIOSUITests.swift; sourceTree = "<group>"; };
 		AC59214B257D724300AB1338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC592157257D9E7200AB1338 /* CadastroContatoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroContatoViewController.swift; sourceTree = "<group>"; };
+		AC81514D25808399007F470D /* SucessoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SucessoView.xib; sourceTree = "<group>"; };
+		AC81514F258084A2007F470D /* SucessoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SucessoView.swift; sourceTree = "<group>"; };
 		ACF8601A257EA54100A5BC5D /* Contato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contato.swift; sourceTree = "<group>"; };
 		ACF8601D257EA58C00A5BC5D /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		ACF86023257EB0D600A5BC5D /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
@@ -214,6 +218,8 @@
 			isa = PBXGroup;
 			children = (
 				AC592157257D9E7200AB1338 /* CadastroContatoViewController.swift */,
+				AC81514D25808399007F470D /* SucessoView.xib */,
+				AC81514F258084A2007F470D /* SucessoView.swift */,
 			);
 			path = CadastroContato;
 			sourceTree = "<group>";
@@ -363,6 +369,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC81514E25808399007F470D /* SucessoView.xib in Resources */,
 				AC592134257D724300AB1338 /* LaunchScreen.storyboard in Resources */,
 				AC37BD622580561900FF5811 /* GoogleService-Info.plist in Resources */,
 				AC592131257D724300AB1338 /* Assets.xcassets in Resources */,
@@ -499,6 +506,7 @@
 				AC37BD542580473A00FF5811 /* ContatosRepository.swift in Sources */,
 				AC59212C257D723F00AB1338 /* HomeController.swift in Sources */,
 				AC592128257D723F00AB1338 /* AppDelegate.swift in Sources */,
+				AC815150258084A2007F470D /* SucessoView.swift in Sources */,
 				ACFFC736257F0BFD00EE00EB /* MenuViewController.swift in Sources */,
 				ACF86024257EB0D600A5BC5D /* HomeTableViewCell.swift in Sources */,
 				AC37BD6625805F7600FF5811 /* mensagemNotContactView.swift in Sources */,
